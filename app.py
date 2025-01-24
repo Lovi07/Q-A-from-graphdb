@@ -13,11 +13,13 @@ st.subheader("Upload a txt file, Ask questions from it and get answer from the N
 # Sidebar for inputs
 with st.sidebar:
     st.title("Neo4j Configuration")
+    st.write("get your neo4j credentials from https://neo4j.com/product/auradb/")
     NEO4J_URI = st.text_input("NEO4J_URI", type="password")
     NEO4J_USERNAME = st.text_input("NEO4J_USERNAME", type="password")
     NEO4J_PASSWORD = st.text_input("NEO4J_PASSWORD", type="password")
     
     st.title("LLM Configuration")
+    st.write("this service use gpt-4-turbo for openai https://platform.openai.com/ and gemma-2b-it for groq https://groq.com/ ")
     llm_choice = st.selectbox("Choose LLM", ["OpenAI", "Groq"])  # Dropdown for LLM selection
     
     if llm_choice == "OpenAI":
