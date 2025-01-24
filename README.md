@@ -1,3 +1,12 @@
+---
+license: mit
+title: Q/A with graphdb
+sdk: streamlit
+emoji: 💻
+colorTo: yellow
+short_description: chat with your document using knowledge graph
+sdk_version: 1.41.1
+---
 **Q/A with Graph Database Using Streamlit**
 This Streamlit application allows users to upload files (TXT or CSV), convert the data into a Neo4j graph database, and perform Q&A using either the OpenAI or Groq language models (LLMs). It provides features to manage the graph database, view its schema, and interact with the data using natural language queries.
 
